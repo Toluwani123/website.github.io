@@ -1,9 +1,12 @@
 html{
     font-family: Nunito; 
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    flex-basis: 100%;
+    flex-basis: 33%;
+    overflow-x: scroll;
+    max-width: 100%;
+    max-height: 100%;
 }
 body{
     margin: 0px;
@@ -20,7 +23,6 @@ body{
     color: burlywood;
     text-align: center;
     padding: 10px 10px 10px 10px;
-    margin: 10px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -40,6 +42,7 @@ ul{
 	text-transform: capitalize;
 	padding-top: 150px;
 	text-align:center;
+    display: flexbox;
     
 
 }
@@ -49,7 +52,7 @@ ul{
     border-color:black;
 }
 .debo li{
-    display:inline-block;  
+    display: flexbox;  
     text-align: center;
     border: 100px;
     padding-right: 100px;
@@ -85,7 +88,7 @@ ul{
     text-align: center;
 	font-size: 20px;
 	padding:0px;
-	display:inline-block;
+	display:flexbox;
 	margin:0px;
 	line-height:40px;
 }
