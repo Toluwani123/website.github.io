@@ -1,13 +1,21 @@
 html{
     font-family: Nunito; 
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    flex-basis: 33%;
     overflow-x: scroll;
     max-width: 100%;
     max-height: 100%;
 }
+@media screen and (min-width: 601px) {
+    html {
+      font-size: 15px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 10px;
+    }
+  }
 body{
     margin: 0px;
 }
@@ -33,7 +41,7 @@ ul{
     list-style-type: none;
 }
 .container{
-    background-image: url("building.png");
+    background-image: url("building.webp");
     height: 500px;
 	padding: 0;
 	margin: 0;
@@ -105,7 +113,7 @@ ul{
     
 }
 .second{
-    background-image: url("Gov.-Sanwo-Olu.jpg");
+    background-image: url("Gov.-Sanwo-Olu.webp");
     height: 500px;
 	padding: 0;
 	margin: 0;
@@ -114,6 +122,8 @@ ul{
 	text-transform: capitalize;
 	padding-top: 150px;
 	text-align:center;
+    display: flexbox;
+    flex-shrink:200;
 }
 .second h1{
     color:wheat;
@@ -127,7 +137,7 @@ ul{
     font-weight:900;
 }
 .extras{
-    background-image: url("work.jpg");
+    background-image: url("work.webp");
     height: 500px;
 	padding: 0;
 	margin: 0;
@@ -136,13 +146,14 @@ ul{
 	text-transform: capitalize;
 	padding-top: 150px;
 	text-align:center;
+    display: flexbox;
 }
 .extras h1{
     text-decoration: underline;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .action{
-    background-image: url("hand.png");
+    background-image: url("hand.webp");
     height: 200px;
 	padding: 0;
 	margin: 0;
@@ -151,6 +162,7 @@ ul{
 	text-transform: capitalize;
 	padding-top: 150px;
 	text-align:center;
+    display: flexbox;
 }
 footer{
     background-color: #333;
